@@ -58,6 +58,11 @@ nav {
     top: 2px;
 }
 
+.main-button:focus {
+    outline: 1px dotted var(--black);
+    outline-offset: -3px;
+}
+
 .main-button:active {
     border-right: 1px solid var(--highlight);
     border-bottom: 1px solid var(--highlight);
@@ -261,4 +266,9 @@ main button:active:not(:disabled) span {
     position: relative;
     top: 1px;
     left: 1px;
+}
+
+main button:focus {
+    outline: 1px dotted var(--black);
+    outline-offset: -4px;
 }
