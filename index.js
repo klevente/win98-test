@@ -13,9 +13,23 @@ function onProgramClick(elem) {
     elem.classList.add('program-active');
 }
 
-allPrograms.forEach((elem, i) => {
+allPrograms.forEach((elem) => {
     elem.addEventListener('click', (e) => {
         e.stopPropagation();
         onProgramClick(elem);
     });
 });
+
+const timeElement = document.querySelector('time');
+
+function updatetime() {
+    timeElement.innerText = new Date().toLocaleTimeString('en-US', {
+        hour: 'numeric',
+        minute: 'numeric',
+        hour12: true,
+    });
+}
+
+setInterval(updatetime, 1000);
+
+updatetime();

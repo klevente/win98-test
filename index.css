@@ -160,6 +160,16 @@ nav {
     top: 1px;
 }
 
+.program:active {
+    border-left: 1px solid var(--black);
+    border-top: 1px solid var(--black);
+    border-bottom: 1px solid var(--highlight);
+    border-right: 1px solid var(--highlight);
+    box-shadow:
+            inset 1px 0 0 0 var(--highlight-dark),
+            inset 0 1px 0 0 var(--highlight-dark);
+}
+
 .program-active {
     font-family: "MS Sans Serif Bold";
     background-color: var(--highlight);
@@ -199,7 +209,7 @@ nav {
     padding-left: 2px;
 }
 
-.tray span {
+.tray time {
     position: relative;
     top: 1px;
     margin-left: 12px;
