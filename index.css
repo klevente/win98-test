@@ -158,6 +158,11 @@ nav {
 .program span {
     position: relative;
     top: 1px;
+
+   /* white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;*/
 }
 
 .program:active:not(.program-active) {
@@ -214,10 +219,6 @@ nav {
     top: 1px;
     margin-left: 12px;
     margin-right: 11px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: inline-block;
 }
 
 main {
