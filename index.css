@@ -13,6 +13,9 @@
     --highlight: #D0E3D3;
     --highlight-dark: #599764;
     --black: #000000;
+
+    font-smooth: never;
+  -webkit-font-smoothing: none;
 }
 
 img {
